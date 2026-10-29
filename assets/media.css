@@ -1,0 +1,30 @@
+/* Pload column in the media library and the field in attachment details. */
+.fixed .column-pload { width: 17em; }
+.pload-mc { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; font-size: 13px; line-height: 1.5; }
+.pload-mc p { margin: 0; }
+.pload-mc-status { font-weight: 600; }
+.pload-mc-ok { color: #007017; }
+.pload-mc-ok b { color: #1d2327; }
+.pload-mc-bad { color: #b32d2e; }
+.pload-mc-warn { color: #7a5a00; }
+.pload-mc-muted, .pload-mc-note { color: #646970; }
+.pload-mc-note { font-size: 12px; word-break: break-word; }
+.pload-mc .button { margin-block: 2px; }
+.pload-mc .pload-mc-link { font-size: 12px; color: #646970; text-decoration: underline; }
+.pload-mc .pload-mc-link:hover { color: #b32d2e; }
+.pload-mc.is-busy { opacity: .6; pointer-events: none; }
+.pload-mc-msg:empty { display: none; }
+.pload-mc-msg { font-size: 12px; color: #2271b1; }
+.pload-mc-details summary { cursor: pointer; color: #2271b1; font-size: 12px; }
+.pload-mc-details { inline-size: 100%; }
+/* One size per block: dimensions on top, sizes below, so long units (e.g. Persian) wrap instead of overflowing. */
+.pload-mc-details table, .pload-mc-details tbody, .pload-mc-details tr, .pload-mc-details th, .pload-mc-details td { display: block; }
+.pload-mc-details table { margin-block-start: 4px; font-size: 12px; inline-size: 100%; }
+.pload-mc-details tr { padding-block: 4px; border-block-start: 1px solid #f0f0f1; }
+.pload-mc-details tr:first-child { border-block-start: 0; }
+.pload-mc-details th, .pload-mc-details td { padding: 0; text-align: start; font-weight: 400; overflow-wrap: anywhere; }
+.pload-mc-details th { color: #646970; font-size: 11px; }
+.pload-mc-details tr.is-error td, .pload-mc-details tr.is-big td { color: #b32d2e; }
+.pload-mc-details tr.is-larger td { color: #646970; }
+/* Attachment details in the media modal: keep the block readable. */
+.compat-field-pload_status .field { padding-top: 6px; }
